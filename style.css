@@ -1,0 +1,255 @@
+
+/* Basic Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #172033;
+}
+
+/* Header */
+.header {
+    background-color: #102b49;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 26px;
+}
+
+.header h2 span {
+    color: #399cff;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    color: #399cff;
+}
+
+.nav .contact-btn {
+    background-color: #2994f5;
+    padding: 12px 22px;
+    border-radius: 8px;
+}
+
+/* Home Section */
+.home {
+    background: linear-gradient(120deg, #123858, #2675b9);
+    color: white;
+    padding: 70px 7%;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+}
+
+.home-text {
+    max-width: 500px;
+}
+
+.small-text {
+    color: #9dcfff;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.home h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.home h1 span {
+    color: #399cff;
+    display: block;
+}
+
+.home-text p {
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2994f5;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    margin-top: 22px;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: #0874d1;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    padding: 45px 7%;
+}
+
+.heading-blue {
+    color: #3295e8;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.team h1,
+.reviews h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #626d7c;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    border: 1px solid #dce2e8;
+    border-radius: 8px;
+    padding: 20px 10px;
+    width: 23%;
+    min-width: 200px;
+}
+
+.circle {
+    background-color: #dceafa;
+    color: #174c7c;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.team-card h3 {
+    margin-bottom: 8px;
+}
+
+.team-card p {
+    color: #318bd0;
+    font-size: 14px;
+}
+
+.social {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Reviews Section */
+.reviews {
+    background-color: #f1f5fa;
+    text-align: center;
+    padding: 45px 7%;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background-color: white;
+    border: 1px solid #e1e5eb;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    width: 31%;
+    min-width: 230px;
+}
+
+.review-card h2 {
+    color: #3295e8;
+    font-size: 32px;
+}
+
+.review-card p {
+    color: #525d6c;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.review-card h4 {
+    margin-bottom: 5px;
+}
+
+.review-card small {
+    color: #687386;
+}
+
+.stars {
+    color: #f3b600;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #102b49;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+/* Mobile Screen */
+@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .home {
+        padding: 45px 7%;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .team h1,
+    .reviews h1 {
+        font-size: 27px;
+    }
+
+    .team-card {
+        width: 100%;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+}
